@@ -3,9 +3,10 @@ import hashlib
 import json
 import os 
 import time
+import base64  # ✅ Required for base64 encoding
 from cryptography.fernet import Fernet
-from base64 import urlsafe_b64decode
 from hashlib import pbkdf2_hmac
+
 
 # === Constants ===
 DATA_FILE = "secure_data.json"
