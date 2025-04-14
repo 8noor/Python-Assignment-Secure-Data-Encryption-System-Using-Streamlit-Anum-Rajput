@@ -1,8 +1,3 @@
-# Python Assignment: Secure Data Encryption System Using Streamlit
-
-# Develop a streamlit-based secure data storage and retrieval system
-
-
 import streamlit as st
 import hashlib
 import json
@@ -61,7 +56,7 @@ def decrypt_text(encrypt_text, key):
 stored_data = load_data()
 
 # ==== navigation bar ====
-st.title(" 🔐Secure Data Encryption System") 
+st.title(" 🔐Secure Data Encryption") 
 menu = ["Home", "Register", "Login", "Store Data", "Retrieve Data" ]
 choice = st.sidebar.selectbox("Navigation", menu)
 
