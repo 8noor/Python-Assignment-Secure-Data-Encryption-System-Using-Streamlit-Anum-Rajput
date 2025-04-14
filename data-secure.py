@@ -73,9 +73,9 @@ elif choice == "Register":
 
     if st.button("Register"):
         if username and password:
-         if username in stored_data:
-          st.warning( " ⚠️ User already exisits. ")
-            else:
+           if username in stored_data:
+              st.warning( " ⚠️ User already exisits. ")
+           else:
                 stored_data[username] = {
                     "password": hash_password(password),
                     "data" : []
